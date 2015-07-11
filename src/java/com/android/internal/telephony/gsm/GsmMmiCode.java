@@ -1146,25 +1146,18 @@ public final class GsmMmiCode extends Handler implements MmiCode {
             CommandException.Error err = ((CommandException)(ar.exception)).getCommandError();
             if (err == CommandException.Error.FDN_CHECK_FAILURE) {
                 Rlog.i(LOG_TAG, "FDN_CHECK_FAILURE");
-                return mContext.getText(com.android.internal.R.string.mmiFdnError);
             } else if (err == CommandException.Error.USSD_MODIFIED_TO_DIAL) {
                 Rlog.i(LOG_TAG, "USSD_MODIFIED_TO_DIAL");
-                return mContext.getText(com.android.internal.R.string.stk_cc_ussd_to_dial);
             } else if (err == CommandException.Error.USSD_MODIFIED_TO_SS) {
                 Rlog.i(LOG_TAG, "USSD_MODIFIED_TO_SS");
-                return mContext.getText(com.android.internal.R.string.stk_cc_ussd_to_ss);
             } else if (err == CommandException.Error.USSD_MODIFIED_TO_USSD) {
                 Rlog.i(LOG_TAG, "USSD_MODIFIED_TO_USSD");
-                return mContext.getText(com.android.internal.R.string.stk_cc_ussd_to_ussd);
             } else if (err == CommandException.Error.SS_MODIFIED_TO_DIAL) {
                 Rlog.i(LOG_TAG, "SS_MODIFIED_TO_DIAL");
-                return mContext.getText(com.android.internal.R.string.stk_cc_ss_to_dial);
             } else if (err == CommandException.Error.SS_MODIFIED_TO_USSD) {
                 Rlog.i(LOG_TAG, "SS_MODIFIED_TO_USSD");
-                return mContext.getText(com.android.internal.R.string.stk_cc_ss_to_ussd);
             } else if (err == CommandException.Error.SS_MODIFIED_TO_SS) {
                 Rlog.i(LOG_TAG, "SS_MODIFIED_TO_SS");
-                return mContext.getText(com.android.internal.R.string.stk_cc_ss_to_ss);
             }
         }
 
